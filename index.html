@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Delmas Gregory</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        color: #333;
+      }
+
+      .cv-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1200px; /* Augmenté */
+        width: 100%;
+        min-height: 90vh; /* Augmenté pour occuper plus d'espace */
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px; /* Ajouté pour mieux respirer */
+      }
+
+      @media (min-width: 768px) {
+        .cv-wrapper {
+          grid-template-columns: 1fr 3fr; /* Ajustement pour un meilleur équilibre */
+        }
+      }
+
+      aside {
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        text-align: center;
+      }
+
+      aside img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      aside nav ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      aside nav ul li {
+        margin: 10px 0;
+      }
+
+      aside nav ul li a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      main {
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      .intro {
+        font-size: 1.1em;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .presentation img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-wrapper">
+      <aside>
+        <img src="/images/Photo de profil APEC.png" alt="Photo de profil" />
+        <h2>Delmas Gregory</h2>
+        <p>Webdesigner</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="inspiration.html">Mes inspirations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <section id="accueil">
+          <h1>Bienvenue sur mon site</h1>
+          <div class="presentation">
+            <img
+              src="/images/Banniere GREGORY DELMAS WEBDESIGNER.jpg"
+              alt="Banniere GREGORY DELMAS WEBDESIGNER"
+            />
+          </div>
+          <p class="intro">
+            Je suis Delmas Gregory, webdesigner passionné par la création
+            d'expériences numériques uniques. Découvrez mon parcours, mes
+            compétences et mes projets à travers ce site.
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

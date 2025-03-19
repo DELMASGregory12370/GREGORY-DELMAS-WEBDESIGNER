@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Inspirations - Delmas Gregory</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .cv-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1200px; /* Augmenté */
+        width: 100%;
+        min-height: 90vh; /* Augmenté pour occuper plus d'espace */
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px; /* Ajouté pour mieux respirer */
+      }
+
+      @media (min-width: 768px) {
+        .cv-wrapper {
+          grid-template-columns: 1fr 3fr; /* Ajustement pour un meilleur équilibre */
+        }
+      }
+
+      aside {
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        text-align: center;
+      }
+
+      aside img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      aside nav ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      aside nav ul li {
+        margin: 10px 0;
+      }
+
+      aside nav ul li a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 5px;
+      }
+
+      .inspirations {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      @media (min-width: 600px) {
+        .inspirations {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+      }
+
+      .inspiration-item {
+        background: #ecf0f1;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .inspiration-item img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .inspiration-item a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 5px 10px;
+        background: #2c3e50;
+        color: #ecf0f1;
+        text-decoration: none;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-wrapper">
+      <aside>
+        <img src="/images/Photo de profil APEC.png" alt="Photo de profil" />
+        <h2>Delmas Gregory</h2>
+        <p>Webdesigner</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <section id="inspirations">
+          <h2>Mes Inspirations</h2>
+          <div class="inspirations">
+            <div class="inspiration-item">
+              <img src="/images/Logo Chat GPT.jpeg" alt="Chat GPT" />
+              <h3>Chat GPT</h3>
+              <p>
+                ChatGPT est une IA conversationnelle développée par OpenAI,
+                capable de répondre aux questions, de rédiger du contenu et
+                d'assister dans divers domaines comme la création et la
+                programmation. 🚀
+              </p>
+              <a
+                href="https://openai.com/index/chatgpt/"
+                target="_blank"
+                rel="noopener"
+                >Voir plus</a
+              >
+            </div>
+            <div class="inspiration-item">
+              <img src="/images/Logo Bootsrapp.jpeg" alt="Bootstrap" />
+              <h3>Bootstrap</h3>
+              <p>
+                Bootstrap est un framework CSS open-source permettant de créer
+                des sites web responsives et modernes rapidement. Il inclut des
+                composants préconçus et un système de grille flexible. 🚀
+              </p>
+              <a href="https://getbootstrap.com/" target="_blank" rel="noopener"
+                >Voir plus</a
+              >
+            </div>
+            <div class="inspiration-item">
+              <img src="/images/Logo Canva.jpeg" alt="Canva" />
+              <h3>Canva</h3>
+              <p>
+                genre moi une courte description de canva ChatGPT a dit : Canva
+                est une plateforme de design en ligne qui permet de créer
+                facilement des visuels professionnels, des présentations et du
+                contenu pour les réseaux sociaux. 🎨🚀
+              </p>
+              <a
+                href="https://www.canva.com/fr_fr/"
+                target="_blank"
+                rel="noopener"
+                >Voir plus</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Delmas Gregory</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .cv-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1200px;
+        width: 100%;
+        min-height: 90vh;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      @media (min-width: 768px) {
+        .cv-wrapper {
+          grid-template-columns: 1fr 3fr;
+        }
+      }
+
+      aside {
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        text-align: center;
+      }
+
+      aside img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      aside nav ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      aside nav ul li {
+        margin: 10px 0;
+      }
+
+      aside nav ul li a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 5px;
+      }
+
+      .blog-posts {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      @media (min-width: 600px) {
+        .blog-posts {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+      }
+
+      .post {
+        background: #ecf0f1;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .post h3 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      .post img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .post p {
+        color: #555;
+        margin-bottom: 10px;
+      }
+
+      .post a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 5px 10px;
+        background: #2c3e50;
+        color: #ecf0f1;
+        text-decoration: none;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-wrapper">
+      <aside>
+        <img src="/images/Photo de profil APEC.png" alt="Photo de profil" />
+        <h2>Delmas Gregory</h2>
+        <p>Webdesigner</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="inspiration.html">Mes inspirations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <section id="blog">
+          <h2>Mon Blog</h2>
+          <div class="blog-posts">
+            <div class="post">
+              <img src="/images/Tailwind CSS.png" alt="Tailwind CSS" />
+              <h3>Découverte de Tailwind CSS</h3>
+              <p>
+                Tailwind CSS est un framework moderne qui facilite le
+                développement d'interfaces responsives et flexibles.
+              </p>
+              <a href="https://tailwindcss.com/" target="_blank" rel="noopener"
+                >Lire la suite</a
+              >
+            </div>
+            <div class="post">
+              <img src="/images/GitHub.png" alt="GitHub" />
+              <h3>Les bases de GitHub</h3>
+              <p>
+                GitHub est une plateforme de gestion de versions basée sur Git,
+                permettant aux développeurs de collaborer et de suivre les
+                modifications du code.
+              </p>
+              <a href="https://github.com/" target="_blank" rel="noopener"
+                >Lire la suite</a
+              >
+            </div>
+            <div class="post">
+              <img src="/images/Figma.png" alt="Figma" />
+              <h3>Les bases de Figma</h3>
+              <p>
+                Figma est un outil de design collaboratif en ligne utilisé pour
+                la création d’interfaces web et mobiles. Il permet aux designers
+                de concevoir des maquettes interactives, de prototyper des
+                interfaces et de travailler en temps réel avec leur équipe.
+              </p>
+              <p>
+                Grâce à son système de composants, ses plugins et son
+                accessibilité sur navigateur, Figma facilite la conception UX/UI
+                et l’optimisation du workflow entre designers et développeurs.
+                🚀🎨
+              </p>
+              <a href="#">Lire la suite</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Nom Prénom</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .cv-wrapper {
+        display: grid;
+         grid-template-columns: 1fr;
+         max-width: 1200px; /* Augmenté */
+         width: 100%;
+         min-height: 90vh; /* Augmenté pour occuper plus d'espace */
+         background: #fff;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         padding: 20px; /* Ajouté pour mieux respirer */
+}
+      @media (min-width: 768px) {
+        .cv-wrapper {
+          grid-template-columns: 1fr 3fr; /* Ajustement pour un meilleur équilibre */
+        }
+      }
+      aside {
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        text-align: center;
+      }
+
+      aside nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+
+      aside img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      aside h2,
+      main h2 {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ecf0f1;
+        padding-bottom: 5px;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label,
+      input,
+      textarea {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      input,
+      textarea {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        color: #ecf0f1;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      #confirmation-message {
+        display: none;
+        color: green;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .contact-wrapper {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-wrapper">
+      <aside>
+        <img src="/images/Photo de profil APEC.png" alt="Photo de profil" />
+        <h2>Delmas Gregory</h2>
+        <p>Webdesigner</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="inspirations.html">Inspirations</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <section>
+          <h2>Formulaire de contact</h2>
+          <form
+            action="https://formspree.io/f/ton_identifiant_formspree"
+            method="POST"
+          >
+            <input type="hidden" name="_replyto" value="ton@email.com" />
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required />
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required />
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="sujet">Sujet :</label>
+            <input type="text" id="sujet" name="sujet" required />
+
+          <p id="confirmation-message">
+            Merci ! Votre message a été envoyé.
+          </p>
+          </form>
+          </p>
+
+          <script>
+            document
+              .querySelector("form")
+              .addEventListener("submit", function (e) {
+                e.preventDefault(); // Empêche l'envoi par défaut pour ajouter l'affichage du message
+                fetch(this.action, {
+                  method: this.method,
+                  body: new FormData(this),
+                  headers: { Accept: "application/json" },
+                })
+                  .then((response) => {
+                    if (response.ok) {
+                      document.getElementById(
+                        "confirmation-message"
+                      ).style.display = "block";
+                      this.reset();
+                    } else {
+                      alert("Une erreur s'est produite, veuillez réessayer.");
+                    }
+                  })
+                  .catch((error) =>
+                    alert("Erreur réseau, veuillez réessayer.")
+                  );
+              });
+          </script>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

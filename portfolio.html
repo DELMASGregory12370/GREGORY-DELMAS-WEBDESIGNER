@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Delmas Gregory</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .cv-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1200px; /* Augmenté */
+        width: 100%;
+        min-height: 90vh; /* Augmenté pour occuper plus d'espace */
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px; /* Ajouté pour mieux respirer */
+      }
+
+      @media (min-width: 768px) {
+        .cv-wrapper {
+          grid-template-columns: 1fr 3fr; /* Ajustement pour un meilleur équilibre */
+        }
+      }
+
+      aside {
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        text-align: center;
+      }
+
+      aside img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      aside nav ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      aside nav ul li {
+        margin: 10px 0;
+      }
+
+      aside nav ul li a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 5px;
+      }
+
+      .portfolio {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      @media (min-width: 600px) {
+        .portfolio {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+      }
+
+      .portfolio-item {
+        background: #ecf0f1;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .portfolio-item a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 5px 10px;
+        background: #2c3e50;
+        color: #ecf0f1;
+        text-decoration: none;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-wrapper">
+      <aside>
+        <img src="/images/Photo de profil APEC.png" alt="Photo de profil" />
+        <h2>Delmas Gregory</h2>
+        <p>Webdesigner</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="inspiration.html">Mes inspirations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <section id="portfolio">
+          <h2>Portfolio</h2>
+          <div class="portfolio">
+            <div class="portfolio-item">
+              <img
+                src="/images/Nouralu-agencement-site-web.jpg"
+                alt="Projet 1"
+              />
+              <h3>Nouralu agencement</h3>
+              <p>🏡 Expertise et Savoir-Faire en Agencement Sur-Mesure</p>
+              <p>
+                Chez Nouralu Agencement, nous créons des solutions d’aménagement
+                intérieur haut de gamme, alliant design 🎨, praticité 🛠️ et
+                matériaux de qualité 🌟. Grâce à notre expertise 🧠, nous
+                transformons vos espaces avec des agencements sur-mesure 🔑,
+                adaptés à vos besoins et vos envies. 💫
+              </p>
+              <a
+                href="https://nouralu-agencement.fr/"
+                target="_blank"
+                rel="noopener"
+                >Voir plus</a
+              >
+            </div>
+            <div class="portfolio-item"> alt="Site web JSRR" />
+              <h3>Site web JSRR</h3>
+              <p>🚀 Nouveau site web de la JSRR !!⚽</p>
+              <p>🌍 La JSRR fait peau neuve en ligne ! !⚽</p>
+              <p>
+                Le nouveau site web de la Jeunesse Sportive Rance Rougier est en
+                ligne ! 🎉 Suivez toute l’actualité du club, consultez les
+                résultats, découvrez les prochaines rencontres et plongez dans
+                l’univers de la JSRR !
+              </p>
+              <a
+                href="https://jeunesse-sportive-rance-rougier.footeo.com/"
+                target="_blank"
+                rel="noopener"
+                >Voir plus</a
+              >
+            </div>
+            <div class="portfolio-item">
+              <img src="/images/Banniere JSRR.jpg"  alt="Bannière JSRR" />
+              <h3>Bannière JSRR</h3>
+              <p>Nouvelle photo de couverture Facebook</p>
+              <p>
+                Intégration d’un arrière plan similaire au logo Facebook, ajout
+                du label territorial obtenue par le club de JSRR pour la période
+                2023/2026, ajout du logo du club du Stade Saint-Affricain suite
+                à l’entente pour les catégories U15 et U17, ajout du slogan de
+                club de territoire Monts Rance et Rougier.
+              </p>
+              <a
+                href="https://www.facebook.com/EcoledeFootJSRR"
+                target="_blank"
+                rel="noopener"
+                >Voir plus</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
