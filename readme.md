@@ -4,7 +4,7 @@ Bienvenue sur mon portfolio de webdesigner ! Ce site présente mes réalisations
 
 ## 🚀 Aperçu du site
 
-Accédez au site en ligne : [GREGORY DELMAS WEBDESIGNER](https://gregory-delmas-designer.fr/)
+Accédez au site en ligne : [GREGORY DELMAS WEBDESIGNER](https://delmasgregory12370.github.io/GREGORY-DELMAS-WEBDESIGNER/)
 
 ## 📁 Structure du projet
 
@@ -41,7 +41,7 @@ Le site est construit avec HTML, CSS et JavaScript, et comprend les pages suivan
 
 ## 📬 Contact
 
-Si vous souhaitez me contacter, rendez-vous sur la page [Contact](https://gregory-delmas-designer.fr/contact) ou via mon Linktree : [Gregory Delmas Webdesigner](https://linktr.ee/gregory.delmas.webdesigner)
+Si vous souhaitez me contacter, rendez-vous sur la page [Contact](https://delmasgregory12370.github.io/GREGORY-DELMAS-WEBDESIGNER/contact.html) ou via mon Linktree : [Gregory Delmas Webdesigner](https://linktr.ee/gregory.delmas.webdesigner)
 
 ---
 
